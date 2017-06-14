@@ -32,12 +32,12 @@ You can create new role with either [Management Console](http://docs.aws.amazon.
 1. Install AWS CLI and login as your IAM User 
 1. Clone this repo to your local computer
 1. cd into the directory
-1. Run the following command on terminal to create a new role <br />
+1. Run the following command on terminal to create a new role
 ``
 aws iam create-role --role-name ebs-backup-worker \
     --assume-role-policy-document file://snapshot-trust.json
 ``
-1. Run the following command on terminal to attach the policy to the newly created role <br />
+1. Run the following command on terminal to attach the policy to the newly created role
 ``
 aws iam put-role-policy --role-name ebs-backup-worker \
     --policy-name TakeSnapshots \
